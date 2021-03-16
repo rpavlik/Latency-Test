@@ -1,5 +1,10 @@
 # Latency Tester Firmware - PlatformIO-based
 
+<!--
+Copyright 2021, Collabora, Ltd.
+SPDX-License-Identifier: BSL-1.0
+-->
+
 This is an evolution of the original OSVR latency tester hardware and firmware:
 refactored to build/run with PlatformIO (with Arduino libraries/framework)
 instead of the Arduino IDE, and explicitly support multiple devices.
@@ -102,3 +107,8 @@ Then, just log the output to a file. This is a CSV file, with the following colu
 - us (timestamp in microseconds)
 - drx, dry, drz (rotation rates about x, y, and z respectively)
 - brightness (raw ADC value read from the light sensor)
+
+## Data analysis
+
+See the [Data_Analysis directory](../../Data_Analysis) for information on how to
+analyzer the log data.
