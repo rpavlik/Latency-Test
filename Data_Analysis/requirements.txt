@@ -1,0 +1,15 @@
+# Copyright 2021, Collabora, Ltd.
+# SPDX-License-Identifier: BSL-1.0
+
+# For analysis
+jupyter
+notebook
+pandas
+scipy
+matplotlib
+
+# For capture
+pyserial
+aioserial
+attrs
+aioconsole
