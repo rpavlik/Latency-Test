@@ -47,13 +47,28 @@ In the same command prompt where you activated the virtual environment, run the
 following:
 
 ```sh
-python3 -m pip install jupyter notebook matplotlib scipy pandas numpy
+python3 -m pip install -r requirements.txt
 ```
 
 (On Windows, use `python` instead of `python3` since that's what the program
 gets named in virtual environments.)
 
 You'll only need to do this the first time.
+
+### Capture data
+
+Hook up the device and install the "log" firmware on it.
+
+In the same command prompt where you activated the virtual environment, run the
+following:
+
+```sh
+python3 capture.py
+```
+
+and follow the steps. (Windows, use `python` instead of `python3`)
+
+Be sure to rename the output file when you're done!
 
 ### Launch jupyter notebook
 
