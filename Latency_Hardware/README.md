@@ -7,7 +7,7 @@ SPDX-License-Identifier: BSL-1.0
 
 This is an evolution of the original OSVR latency tester hardware and firmware:
 refactored to build/run with PlatformIO (with Arduino libraries/framework)
-instead of the Arduino IDE, and explicitly support multiple devices.
+instead of the Arduino IDE, and to explicitly support multiple devices.
 
 ## Hardware
 
@@ -25,7 +25,7 @@ instead of the Arduino IDE, and explicitly support multiple devices.
   - Wired in "reverse-bias"
   - Requires a resistor: start with a value around 680K. May adjust value:
     increase value if brightness levels too small
-  - Should be on long enough wires so it can be attached to the lens/screen.
+  - Should be on long enough wires so it can be **attached to the lens/screen**.
   - You may wish to mask out the sides to avoid stray light affecting the
     sensor: black hot glue works well.
 - Optional but encouraged: A turntable/"lazy susan" (often used for storage and
@@ -65,7 +65,14 @@ the platform and libraries in platformio. If you get an upload error, you may
 need to hit the Reset button on the Arduino and try again.
 
 You will usually then open the USB serial port created by the Arduino in a
-terminal program to view and/or log the output.
+terminal program to view and/or log the output. When it comes time to actually
+record the data, you'll likely use a Python script to walk you through it and
+write out the log.
+
+On the HMD, you will need to run an application that will display a gradient
+from black to white based on the rotation of the headset. This should be easy
+enough to implement in most any VR/XR environment. A sample using VRPN is
+included in [desktop_app](../desktop_app/).
 
 ### Photosensor Latency Test
 
@@ -96,19 +103,32 @@ platformio run --environment nano33ble.log --target upload
 ```
 
 For this test you'll want the tester securely mounted to the HMD, as described
-above. You will probably also want a terminal program capable of saving to a log
-file: Tera Term Pro is a good one on Windows. (Start logging before connecting.)
-Start up the application on the HMD, and make sure you have the HMD able to move
-back and forth in a range without hitting all-the-way white or black, because
-it's actually the extremes of the motion we care about.
+above.
 
-Then, just log the output to a file. This is a CSV file, with the following columns:
+The new fancy way of running this test is with the `capture.py` script in the
+[Python directory](../Python) . This is highly recommended.
+
+The old way is with a terminal program capable of saving to a log file: Tera
+Term Pro is a good one on Windows. (Start logging before connecting.)
+
+Start up the "gradient when rotating" application on the HMD, and make sure you
+have the HMD able to move back and forth in a range without hitting all-the-way
+white or black, because it's actually the extremes of the motion we care about.
+
+Then, just follow the script's steps (or log the output to a file if you're
+using a terminal program). A CSV file is written, with the following columns:
 
 - us (timestamp in microseconds)
 - drx, dry, drz (rotation rates about x, y, and z respectively)
 - brightness (raw ADC value read from the light sensor)
 
+### Other Tests
+
+While the log test is recommended as it preserves the most data for analysis,
+the other tests were also ported from the original Arduino sketches. See the
+[PreviousDocs directory](PreviousDocs/) for more details on those other tests.
+
 ## Data analysis
 
-See the [Data_Analysis directory](../../Data_Analysis) for information on how to
-analyzer the log data.
+See the [Python directory](../Python) for information on how to analyze the log
+data.

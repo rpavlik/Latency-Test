@@ -1,15 +1,18 @@
-# Latency Data Analysis
+# Python Capture Script and Latency Data Analysis
 
 <!--
 Copyright 2021, Collabora, Ltd.
 SPDX-License-Identifier: BSL-1.0
 -->
 
-For use with the *updated* "log" firmware.
+For use with the "log" firmware.
 
 ## Environment setup
 
-You'll likely want to open your log file using Jupyter Notebook: here's how to get it ready.
+These steps will walk you through installing the dependencies of the Jupyter
+Notebook and utilities for data analysis, as well as for the automatic
+log/capture script, in a local directory without polluting your system-wide
+Python install.
 
 ### Create virtual environment (first time only)
 
@@ -55,7 +58,7 @@ gets named in virtual environments.)
 
 You'll only need to do this the first time.
 
-### Capture data
+### Capture data script
 
 Hook up the device and install the "log" firmware on it.
 
@@ -68,9 +71,9 @@ python3 capture.py
 
 and follow the steps. (Windows, use `python` instead of `python3`)
 
-Be sure to rename the output file when you're done!
+**Be sure to rename the output file when you're done!**
 
-### Launch jupyter notebook
+### Launch Jupyter Notebook to perform data analysis
 
 In the same command prompt where you activated the virtual environment, run the
 following:
