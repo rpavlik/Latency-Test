@@ -4,12 +4,17 @@ Version 5.0
 
 By Russell M. Taylor II
 
+<!--
+Copyright 2015 Sensics, Inc.
+Copyright 2021 Collabora, Ltd.
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 The Sensics latency testing hardware is constructed using an Arduino, an Arduino
 gyro/accelerometer shield, and one or more photosensor inputs.
 
 ## Arduino
-
-!["SainSmart" Uno clone](media/image1.jpeg)
 
 We built the prototype unit using an Arduino Uno-style board. The particular
 board we used was the SainSmart UNO ATmega328P, which was purchased through
@@ -31,8 +36,8 @@ board.
 
 ## Photosensor/Phototransistor
 
-![Fundamental phototransistor circuit, from SHARP Optoelectronics
-Photodiode/Phototransistor Application Note](media/image3.svg)
+![Fundamental phototransistor circuit, based on SHARP Optoelectronics
+Photodiode/Phototransistor Application Note](media/schematic.svg)
 
 We built the second prototype using an IR phototransistor purchased at Radio
 Shack, which also operated in the visible-light range (part number 276-0145,
@@ -49,15 +54,13 @@ the Arduino. Connect the junction between the transistor collector and resistor
 (V<sub>OUT</sub>) to ANALOG IN A0 on the Arduino.
 
 ***Alternative:*** We built the first prototype, (which had slower response)
-using a wRobot light sensor through Amazon.com at
+using a wRobot light sensor based on a photoresistor through Amazon.com at
 <http://smile.amazon.com/dp/B00AF278A8/> for $6.99.
-
-![Alternative sensor with too-slow response](media/image4.jpeg)
 
 You need to find some jumper cables to connect the pins on the photosensors to
 the pins on the Uno (actually on the shield’s pass-through connectors). For the
 prototype, we bought some at Radio Shack, but you can also purchase them online.
-You want make-to-female jumpers like the ones at
+You want pin-to-socket jumpers like the ones at
 <http://smile.amazon.com/dp/B00D7SDDLU/> from Amazon.
 
 **Installation:** Connect the GND pin on the light sensor to GND on the Arduino
