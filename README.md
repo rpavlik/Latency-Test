@@ -1,5 +1,12 @@
 # XR Latency Test
 
+<!--
+// Copyright 2015 Sensics, Inc.
+// Copyright 2021 Collabora, Ltd.
+//
+// SPDX-License-Identifier: Apache-2.0
+-->
+
 This is mainly a Hardware+Software latency test device (Latency_Hardware
 directory), with DIY-able hardware. See that directory for additional
 information and instructions.

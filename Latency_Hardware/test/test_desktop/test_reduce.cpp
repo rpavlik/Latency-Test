@@ -1,3 +1,6 @@
+// Copyright 2021, Collabora, Ltd.
+// SPDX-License-Identifier: BSL-1.0
+// Original Author: Ryan Pavlik
 
 #include <unity.h>
 #include <numeric>

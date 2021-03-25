@@ -1,3 +1,6 @@
+# Copyright 2015, Sensics, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
 cmake_minimum_required(VERSION 2.8.12)
 project(Latency_test)
 

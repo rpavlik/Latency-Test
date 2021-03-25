@@ -1,0 +1,282 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: XR-Latency-Test
+Upstream-Contact: Ryan Pavlik <ryan.pavlik@collabora.com>
+Source: https://github.com/rpavlik/Latency-Test
+
+Files: Latency_Hardware/lib/Eigen/*
+Copyright: 2008, 2009, 2016, Gael Guennebaud <g.gael@free.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/SparseCholesky
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/SparseLU
+Copyright: 2012-2015, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/StdDeque
+ Latency_Hardware/lib/Eigen/Eigen/StdVector
+Copyright: 2009, Hauke Heibel <hauke.heibel@googlemail.com>
+ 2009, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/StdList
+Copyright: 2009, Hauke Heibel <hauke.heibel@googlemail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/*
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Cholesky/*
+Copyright: 2011, Intel Corporation.
+License: BSD-3-Clause
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Cholesky/LDLT.h
+Copyright: 2011, Timothy E. Holy <tim.holy@gmail.com >
+ 2009, Keir Mierle <mierle@gmail.com>
+ 2009, Benoit Jacob <jacob.benoit.1@gmail.com>
+ 2008-2011, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Cholesky/LLT.h
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Eigenvalues/*
+Copyright: 2010, 2012, Jitse Niesen <jitse@maths.leeds.ac.uk>
+ 2008-2010, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ Latency_Hardware/lib/Eigen/Eigen/src/Eigenvalues/ComplexSchur.h
+Copyright: 2010, 2012, Jitse Niesen <jitse@maths.leeds.ac.uk>
+ 2009, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2009, Claire Maurice
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h
+ Latency_Hardware/lib/Eigen/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h
+ Latency_Hardware/lib/Eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h
+Copyright: 2011, Intel Corporation.
+License: BSD-3-Clause
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+Copyright: 2016, Tobias Wood <tobias@spinicist.org.uk>
+ 2012-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2010, 2012, Jitse Niesen <jitse@maths.leeds.ac.uk>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Eigenvalues/RealQZ.h
+Copyright: 2012, Alexey Korepanov <kaikaikai@yandex.ru>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Geometry/Hyperplane.h
+ Latency_Hardware/lib/Eigen/Eigen/src/Geometry/OrthoMethods.h
+ Latency_Hardware/lib/Eigen/Eigen/src/Geometry/ParametrizedLine.h
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2006-2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Geometry/Quaternion.h
+Copyright: 2009, Mathieu Gautier <mathieu.gautier@cea.fr>
+ 2008-2010, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Geometry/Transform.h
+Copyright: 2010, Hauke Heibel <hauke.heibel@gmail.com>
+ 2009, Benoit Jacob <jacob.benoit.1@gmail.com>
+ 2008, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Geometry/Umeyama.h
+Copyright: 2009, Hauke Heibel <hauke.heibel@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Geometry/arch/*
+Copyright: 2009, Rohit Garg <rpg.314@gmail.com>
+ 2009, 2010, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Householder/*
+Copyright: 2009, 2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+ 2008, 2009, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Householder/BlockHouseholder.h
+Copyright: 2010, Vincent Lejeune
+ 2010, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h
+Copyright: 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+ 2009-2015, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h
+ Latency_Hardware/lib/Eigen/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h
+Copyright: 2012-2015, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/Jacobi/*
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2006-2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/LU/*
+Copyright: 2006-2009, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/LU/InverseImpl.h
+ Latency_Hardware/lib/Eigen/Eigen/src/LU/PartialPivLU.h
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2006-2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/LU/PartialPivLU_LAPACKE.h
+Copyright: 2011, Intel Corporation.
+License: BSD-3-Clause
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/LU/arch/*
+Copyright: 2010, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2009, Benoit Jacob <jacob.benoit.1@gmail.com>
+ 2001, Intel Corporation
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/MetisSupport/*
+Copyright: 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/OrderingMethods/Eigen_Colamd.h
+Copyright: 2012, Desire Nuentsa Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/OrderingMethods/Ordering.h
+Copyright: 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/PaStiXSupport/*
+Copyright: 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/PardisoSupport/*
+Copyright: 2011, Intel Corporation.
+License: BSD-3-Clause
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/QR/*
+Copyright: 2011, Intel Corporation.
+License: BSD-3-Clause
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/QR/ColPivHouseholderQR.h
+ Latency_Hardware/lib/Eigen/Eigen/src/QR/FullPivHouseholderQR.h
+Copyright: 2009, 2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+ 2008, 2009, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+Copyright: 2016, Rasmus Munk Larsen <rmlarsen@google.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/QR/HouseholderQR.h
+Copyright: 2010, Vincent Lejeune
+ 2009, Benoit Jacob <jacob.benoit.1@gmail.com>
+ 2008-2010, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SPQRSupport/*
+Copyright: 2012-2014, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2012, 2013, Desire Nuentsa <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SVD/*
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2006-2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SVD/BDCSVD.h
+Copyright: 2014-2017, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2013, Pierre Zoppitelli <pierre.zoppitelli@ensimag.fr>
+ 2013, Nicolas Carre <nicolas.carre@ensimag.fr>
+ 2013, Jitse Niesen <jitse@maths.leeds.ac.uk>
+ 2013, Jean Ceccato <jean.ceccato@ensimag.fr>
+ 2013, Gauthier Brun <brun.gauthier@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SVD/JacobiSVD_LAPACKE.h
+Copyright: 2011, Intel Corporation.
+License: BSD-3-Clause
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SVD/SVDBase.h
+Copyright: 2014, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2013, Pierre Zoppitelli <pierre.zoppitelli@ensimag.fr>
+ 2013, Nicolas Carre <nicolas.carre@ensimag.fr>
+ 2013, Jean Ceccato <jean.ceccato@ensimag.fr>
+ 2013, Gauthier Brun <brun.gauthier@gmail.com>
+ 2009, 2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SparseCore/SparseColEtree.h
+Copyright: 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SparseCore/SparseTriangularView.h
+Copyright: 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+ 2009-2015, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SparseCore/SparseView.h
+Copyright: 2011-2014, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2010, Daniel Lowengrub <lowdanie@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SparseLU/*
+Copyright: 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SparseLU/SparseLU.h
+ Latency_Hardware/lib/Eigen/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h
+ Latency_Hardware/lib/Eigen/Eigen/src/SparseLU/SparseLU_column_bmod.h
+ Latency_Hardware/lib/Eigen/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
+ Latency_Hardware/lib/Eigen/Eigen/src/SparseLU/SparseLU_panel_bmod.h
+Copyright: 2012-2015, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2012, Désiré Nuentsa-Wakam <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SparseLU/SparseLU_gemm_kernel.h
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/SparseQR/*
+Copyright: 2012-2014, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2012, 2013, Desire Nuentsa <desire.nuentsa_wakam@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/StlSupport/*
+Copyright: 2009, Hauke Heibel <hauke.heibel@googlemail.com>
+ 2009, Gael Guennebaud <gael.guennebaud@inria.fr>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/StlSupport/StdList.h
+Copyright: 2009, Hauke Heibel <hauke.heibel@googlemail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/misc/*
+Copyright: 2006-2009, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/misc/RealSvd2x2.h
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2006-2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/misc/lapacke.h
+Copyright: 2010, Intel Corp.
+License: BSD-3-Clause
+
+Files: Latency_Hardware/lib/Eigen/Eigen/src/plugins/*
+Copyright: 2008-2016, Gael Guennebaud <gael.guennebaud@inria.fr>
+ 2006-2010, Benoit Jacob <jacob.benoit.1@gmail.com>
+License: MPL-2.0
