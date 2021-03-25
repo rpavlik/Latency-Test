@@ -1,3 +1,5 @@
+# Copyright 2015, Sensics, Inc.
+# SPDX-License-Identifier: Apache-2.0
 
 # Call with the output var, then with one or more dependencies (imported targets)
 function(get_search_dirs _var)

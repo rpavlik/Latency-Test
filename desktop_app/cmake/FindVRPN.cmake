@@ -23,10 +23,11 @@
 # http://academic.cleardefinition.com
 # Iowa State University HCI Graduate Program/VRAC
 #
-# Copyright Iowa State University 2009-2012.
+# Copyright 2009-2012, Iowa State University
 # Distributed under the Boost Software License, Version 1.0.
 # (See accompanying file LICENSE_1_0.txt or copy at
 # http://www.boost.org/LICENSE_1_0.txt)
+# SPDX-License-Identifier: BSL-1.0
 
 set(VRPN_ROOT_DIR
 	"${VRPN_ROOT_DIR}"
@@ -49,6 +50,11 @@ else()
 		# 32-bit dir on win32, useless to us on win64
 		file(TO_CMAKE_PATH "$ENV{ProgramFiles}" _progfiles)
 	endif()
+endif()
+
+set(_vrpn_quiet)
+if(VRPN_FIND_QUIETLY)
+	set(_vrpn_quiet QUIET)
 endif()
 
 ###
@@ -99,19 +105,19 @@ set(_deps_libs)
 set(_deps_includes)
 set(_deps_check)
 
-find_package(quatlib)
+find_package(quatlib ${_vrpn_quiet})
 list(APPEND _deps_libs ${QUATLIB_LIBRARIES})
 list(APPEND _deps_includes ${QUATLIB_INCLUDE_DIRS})
 list(APPEND _deps_check QUATLIB_FOUND)
 
 if(NOT WIN32)
-	find_package(Threads)
+	find_package(Threads ${_vrpn_quiet})
 	list(APPEND _deps_libs ${CMAKE_THREAD_LIBS_INIT})
 	list(APPEND _deps_check CMAKE_HAVE_THREADS_LIBRARY)
 endif()
 
 if(WIN32)
-	find_package(Libusb1)
+	find_package(Libusb1 QUIET)
 	if(LIBUSB1_FOUND)
 		list(APPEND _deps_libs ${LIBUSB1_LIBRARIES})
 		list(APPEND _deps_includes ${LIBUSB1_INCLUDE_DIRS})
