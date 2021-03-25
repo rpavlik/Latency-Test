@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <DOCUMENT Type="Advanced Installer" CreateVersion="11.7.1" version="11.8" Modules="simple" RootPath="." Language="en" Id="{C4796B13-DD63-42FC-86CA-BBB75A8A45BE}">
+  <!--
+ // Copyright 2015 Sensics, Inc.
+ //
+ // (Licensed under the Apache License, Version 2.0)
+ // SPDX-License-Identifier: Apache-2.0
+  -->
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
     <ROW Property="AI_UPGRADE" Value="No"/>

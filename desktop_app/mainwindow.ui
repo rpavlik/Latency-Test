@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
+ <!--
+// Copyright 2015 Sensics, Inc.
+//
+// (Licensed under the Apache License, Version 2.0)
+// SPDX-License-Identifier: Apache-2.0
+ -->
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
