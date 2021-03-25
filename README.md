@@ -1,14 +1,21 @@
-# Latency-Test
+# XR Latency Test
 
-Developed by Sensics.
+This is mainly a Hardware+Software latency test device (Latency_Hardware
+directory), with DIY-able hardware. See that directory for additional
+information and instructions.
 
-Software-only latency test program that can optionally be used with hardware.
+Can test latency **on any device:** HMD connected to PC, Android-based phone,
+etc.
 
-Also a Hardware+Software latency test device (Latency_Hardware directory).
+Originally developed by Russell Taylor supported by Sensics (now defunct) and
+[ReliaSolve](https://www.reliasolve.com/). Most recent additional development
+supported by [Collabora](https://collabora.com).
 
-Manual describing the system is in Latency_Hardware/Latency_Tester_Hardware.docx.
+Contributions appreciated!
 
-Can test latency **on any device:** HMD connected to PC, Android-based phone, etc.
+## License
 
-Measurements are done on an Arduino board
-
+The license for most source files written for this repo is Apache 2.0. See the
+header of each file for specific information. Dependencies (including the
+[Eigen](https://eigen.tuxfamily.org) library included in this repo) have their
+own licenses.
