@@ -12,7 +12,8 @@ directory), with DIY-able hardware. See that directory for additional
 information and instructions.
 
 Can test latency **on any device:** HMD connected to PC, Android-based phone,
-etc.
+etc. All that is needed on the HMD is an application that fades from black to
+white depending on the rotation of the head.
 
 Originally developed by Russell Taylor supported by Sensics (now defunct) and
 [ReliaSolve](https://www.reliasolve.com/). Most recent additional development
