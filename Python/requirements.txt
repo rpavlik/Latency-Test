@@ -11,5 +11,4 @@ matplotlib
 # For capture
 pyserial
 aioserial
-attrs
 aioconsole

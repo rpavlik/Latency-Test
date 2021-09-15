@@ -5,10 +5,11 @@
 
 import asyncio
 import logging
+import dataclasses
+from typing import Optional
 
 import aioconsole
 import aioserial
-import attr
 from serial.tools import list_ports
 
 logging.basicConfig(level=logging.DEBUG)
@@ -37,15 +38,16 @@ def _get_known_ports():
                 known_devices[our_vid_pid],
             )
             return info.device
+    raise RuntimeError("Could not find any connected devices")
 
 
-@attr.s
+@dataclasses.dataclass
 class Measurement:
-    us = attr.ib(type=int)
-    drx = attr.ib(type=float)
-    dry = attr.ib(type=float)
-    drz = attr.ib(type=float)
-    brightness = attr.ib(type=int)
+    us: int
+    drx: float
+    dry: float
+    drz: float
+    brightness: int
 
     @classmethod
     def from_csv_line(cls, line: bytes):
@@ -79,12 +81,14 @@ async def get_measurement(serial_port: aioserial.AioSerial, retries=1):
             return meas
 
 
-@attr.s
+@dataclasses.dataclass
 class RunningExtrema:
-    min_val = attr.ib(default=None)
-    max_val = attr.ib(default=None)
+    min_val: Optional[float] = None
+    max_val: Optional[float] = None
 
-    def get_range(self):
+    def get_range(self) -> float:
+        if self.max_val is None or self.min_val is None:
+            raise ValueError("Cannot get range when we have not processed any values")
         return self.max_val - self.min_val
 
     def process(self, val) -> bool:
