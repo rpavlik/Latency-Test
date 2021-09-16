@@ -6,6 +6,7 @@
 import asyncio
 import logging
 import dataclasses
+import datetime
 from typing import Optional
 
 import aioconsole
@@ -16,6 +17,9 @@ logging.basicConfig(level=logging.DEBUG)
 
 FILENAME = "measurements.csv"
 
+def _make_filename():
+    now = datetime.datetime.now()
+    return "meas_{}{:02d}{:02d}_{:02d}{:02d}.csv".format(now.year, now.month, now.day, now.hour, now.minute)
 
 def _get_known_devices():
     return {_vid_pid("2341", "805A"): "Arduino Nano 33 BLE"}
@@ -157,8 +161,9 @@ async def main(device: str):
         )
         return
 
+    filename = _make_filename()
     print("OK, recording to disk, enter to stop.")
-    with open(FILENAME, "w") as fp:
+    with open(filename, "w") as fp:
         # header row
         fp.write("us,drx,dry,drz,brightness\n")
         base_meas = await get_measurement(serial_port)
@@ -176,7 +181,7 @@ async def main(device: str):
             # Offset the timestamp for ease of use.
             meas.us -= zero_time
             fp.write(meas.get_csv_line())
-    print(f"All done! Go move/rename {FILENAME} and analyze it!")
+    print(f"All done! Go move/rename {filename} and analyze it!")
 
 
 if __name__ == "__main__":
