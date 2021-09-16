@@ -8,6 +8,7 @@
 
 #ifdef TARGET_ARDUINO_NANO33BLE
 #include <Arduino.h>
+#include <SPI.h>
 constexpr int MAX_ANALOG = 65535;
 
 static inline void setupAnalog() {
